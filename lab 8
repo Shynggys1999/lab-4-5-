@@ -6,6 +6,7 @@ def reduce(function, iterable, initializer=None):
         value = initializer
     for element in it:
         value = function(value, element)
+<<<<<<< HEAD
     return value
 
     >>> from functools import reduce
@@ -13,3 +14,13 @@ def reduce(function, iterable, initializer=None):
 >>> sum_all = reduce(lambda x,y: x + y, items)
 >>> sum_all
 # 150
+=======
+    return value
+>>>>>>> origin/master
+>>> def square(number):
+...       return number ** 2
+...
+>>> numbers = [1, 2, 3, 4, 5]
+>>> squared = map(square, numbers)
+>>> list(squared)
+[1, 4, 9, 16, 25]
