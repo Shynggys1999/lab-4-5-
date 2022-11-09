@@ -6,6 +6,7 @@ def reduce(function, iterable, initializer=None):
         value = initializer
     for element in it:
         value = function(value, element)
+<<<<<<< HEAD
     return value
 
     >>> from functools import reduce
@@ -13,3 +14,6 @@ def reduce(function, iterable, initializer=None):
 >>> sum_all = reduce(lambda x,y: x + y, items)
 >>> sum_all
 # 150
+=======
+    return value
+>>>>>>> origin/master
