@@ -78,19 +78,3 @@ def get_student_grades():
 table = get_student_grades()
 for student, grade in table.items():
     print(student, grade)
-
-    # 2-Мысал. swapcase() методы - бас әріппен жазылғанды кішіге,ал кішіні үлкенге айналдырады
-    text = 'AimaN is a STUDENT oF SatbAyev UNIVERsity'
-    print(text.swapcase())  # aIMAn IS A student Of sATBaYEV univerSITY
-
-    # 3-Мысал . zfill() методы - жолдың басына нөлдерді (0) қосады
-    text = 'Python'
-    print(text.zfill(10))  # 0000Python
-
-    # 4-Мысал . center() методы -  жолды центрге туралайды. Ол белгілі бір таңбаға байланысты орындалады
-    text = 'Aiman'  # Айман деген строка берілсін
-    print(text.center(9, ''))  # **Aiman* деп центрге выравнивать етіп береді
-
-    # 5-Мысал . find() методы строканың индексі бойынша іздейді
-    text = 'Она продает ракушки на берегу моря. Товары, которые она продает, безусловно, ракушки.'
-    print(text.find('ракушки', 0, 9))  # -1 қайтарады,себебі 0 мен 9 индекстері арасында табылмады
